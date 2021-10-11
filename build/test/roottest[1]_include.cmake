@@ -1,0 +1,5 @@
+if(EXISTS "/Users/eovertoo/projects-advanced/computerv1cmake/build/test/roottest[1]_tests.cmake")
+  include("/Users/eovertoo/projects-advanced/computerv1cmake/build/test/roottest[1]_tests.cmake")
+else()
+  add_test(roottest_NOT_BUILT roottest_NOT_BUILT)
+endif()

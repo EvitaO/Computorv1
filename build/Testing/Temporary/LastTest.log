@@ -1,0 +1,25 @@
+Start testing: Oct 11 17:38 CEST
+----------------------------------------------------------
+1/1 Testing: roottest
+1/1 Test: roottest
+Command: "/Users/eovertoo/projects-advanced/computerv1cmake/build/computer"
+Directory: /Users/eovertoo/projects-advanced/computerv1cmake/build/test
+"roottest" start time: Oct 11 17:38 CEST
+Output:
+----------------------------------------------------------
+invalid argument
+Usage: ./computor <string>
+String has to have the following structer:
+ 	- every term has this form a * x^n
+	- were n is an exponent of value 0, 1 or 2
+Example:
+	"5 * X^0 + 4 * X^1 - 9.3 * X^2 = 1 * X^0"
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"roottest" end time: Oct 11 17:38 CEST
+"roottest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 11 17:38 CEST
