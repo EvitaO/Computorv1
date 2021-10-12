@@ -1,15 +1,15 @@
 #include "gtest/gtest.h"
-#include "../header.hpp"
+#include "header.hpp"
+#include <cmath>
 
 TEST(roottest, HandlesZeroInput){
-    EXPECT_NEAR(calculateroot(0), 0, 0.01);
+    EXPECT_EQ(calculateroot(0), sqrt(0));
 }
 
 TEST(roottest, HandlesPositifinput){
-    EXPECT_NEAR(calculateroot(2), 1.414, 0.0002);
-}
-
-int main(int argc, char **argv) {
-  ::testing::InitGoogleTest(&argc, argv);
-  return RUN_ALL_TESTS();
+    //EXPECT_EQ(calculateroot(2), sqrt(2));
+    EXPECT_NEAR(calculateroot(2), sqrt(2), 0.0001);
+    EXPECT_NEAR(calculateroot(124.134), sqrt(124.134), 0.0001);
+    EXPECT_NEAR(calculateroot(1.484), sqrt(1.484), 0.0001);
+    EXPECT_NEAR(calculateroot(48342.73833), sqrt(48342.73833), 0.0001);
 }

@@ -1,16 +1,16 @@
 
-cmake_minimum_required(VERSION 3.21.0)
+set(BINARY ${CMAKE_PROJECT_NAME}_test)
 
-# add_subdirectory(${CMAKE_BINARY_DIR}/googletest)
+set(SOURCES 
+    main.cpp
+    sqrt_test.cpp
+)
 
-add_executable(computertest sqrt_test.cpp)
-
-# include_directories(../googletest)
-
-
-target_link_libraries(gtest_main)
+add_executable(${BINARY} ${SOURCES})
 
 add_test(
-    NAME roottest
-    COMMAND computer
+    NAME ${BINARY}
+    COMMAND ${BINARY}
 )
+
+target_link_libraries(${BINARY} PUBLIC ${CMAKE_PROJECT_NAME}_lib gtest)

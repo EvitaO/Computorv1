@@ -65,6 +65,18 @@ CMAKE_BINARY_DIR = /Users/eovertoo/projects-advanced/computerv1cmake/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -97,28 +109,6 @@ list_install_components:
 # Special rule for the target list_install_components
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/Users/eovertoo/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -172,17 +162,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named computer
+# Target rules for targets named computer_run
 
 # Build rule for target.
-computer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer
-.PHONY : computer
+computer_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_run
+.PHONY : computer_run
 
 # fast build rule for target.
-computer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/build
-.PHONY : computer/fast
+computer_run/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_run.dir/build.make src/CMakeFiles/computer_run.dir/build
+.PHONY : computer_run/fast
+
+#=============================================================================
+# Target rules for targets named computer_lib
+
+# Build rule for target.
+computer_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_lib
+.PHONY : computer_lib
+
+# fast build rule for target.
+computer_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/build
+.PHONY : computer_lib/fast
+
+#=============================================================================
+# Target rules for targets named computer_test
+
+# Build rule for target.
+computer_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_test
+.PHONY : computer_test
+
+# fast build rule for target.
+computer_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/build
+.PHONY : computer_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -194,7 +210,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -207,7 +223,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -220,7 +236,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -233,117 +249,8 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named computertest
-
-# Build rule for target.
-computertest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computertest
-.PHONY : computertest
-
-# fast build rule for target.
-computertest/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computertest.dir/build.make test/CMakeFiles/computertest.dir/build
-.PHONY : computertest/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-polynomial.o: polynomial.cpp.o
-.PHONY : polynomial.o
-
-# target to build an object file
-polynomial.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/polynomial.cpp.o
-.PHONY : polynomial.cpp.o
-
-polynomial.i: polynomial.cpp.i
-.PHONY : polynomial.i
-
-# target to preprocess a source file
-polynomial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/polynomial.cpp.i
-.PHONY : polynomial.cpp.i
-
-polynomial.s: polynomial.cpp.s
-.PHONY : polynomial.s
-
-# target to generate assembly for a file
-polynomial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/polynomial.cpp.s
-.PHONY : polynomial.cpp.s
-
-utils.o: utils.cpp.o
-.PHONY : utils.o
-
-# target to build an object file
-utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/utils.cpp.o
-.PHONY : utils.cpp.o
-
-utils.i: utils.cpp.i
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
-validate.o: validate.cpp.o
-.PHONY : validate.o
-
-# target to build an object file
-validate.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/validate.cpp.o
-.PHONY : validate.cpp.o
-
-validate.i: validate.cpp.i
-.PHONY : validate.i
-
-# target to preprocess a source file
-validate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/validate.cpp.i
-.PHONY : validate.cpp.i
-
-validate.s: validate.cpp.s
-.PHONY : validate.s
-
-# target to generate assembly for a file
-validate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/computer.dir/build.make CMakeFiles/computer.dir/validate.cpp.s
-.PHONY : validate.cpp.s
 
 # Help Target
 help:
@@ -357,25 +264,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... computer"
-	@echo "... computertest"
+	@echo "... computer_lib"
+	@echo "... computer_run"
+	@echo "... computer_test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... polynomial.o"
-	@echo "... polynomial.i"
-	@echo "... polynomial.s"
-	@echo "... utils.o"
-	@echo "... utils.i"
-	@echo "... utils.s"
-	@echo "... validate.o"
-	@echo "... validate.i"
-	@echo "... validate.s"
 .PHONY : help
 
 
