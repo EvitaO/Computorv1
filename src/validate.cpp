@@ -4,6 +4,7 @@ validate::validate(){}
 
 validate::validate(std::string str){
 	_input = str;
+	_eq = 1;
 }
 
 validate::validate(validate const & src){
@@ -17,6 +18,7 @@ validate &	validate::operator=(validate const & src){
 	_reducedform = src._reducedform;
 	_chunks = src._chunks;
 	_order = src._order;
+	_eq = src._eq;
 	return *this;
 }
 
@@ -47,7 +49,7 @@ int			validate::checkSigns(std::string input, int i){
 	int 	sign = 1;
 	if (input[i] == '=' && input[i + 1] == ' '){
 		i = i + 2;
-		sign *= -1;
+		_eq *= -1;
 	}
 	if (input[i] == '+' && input[i + 1] == ' ')
 		i = i + 2;
@@ -55,7 +57,7 @@ int			validate::checkSigns(std::string input, int i){
 		i = i + 2;
 		sign *= -1;
 	}
-	return i * sign;
+	return i * sign * _eq;
 }
 
 int		validate::saveNbr(std::string input, int i, int sign){

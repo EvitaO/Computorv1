@@ -38,6 +38,7 @@ class	validate{
 		std::vector<std::pair<float, int> >	_order;
 		int									_degree;
 		float								_nbr;
+		int									_eq;
 };
 
 std::ostream &			operator<<(std::ostream & o, validate const & src);

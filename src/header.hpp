@@ -15,8 +15,9 @@
 std::string		stringNumber(std::string input, int i);
 bool			compare(std::pair<float, int> p1, std::pair<float, int> p2);
 
-float			root(float num, float brange, float erange);
-float			calculateroot(float n);
+long double		calculateroot(long double n);
+long double	    findrange(long double n);
+void		    smallerrange(long double *i, long double *j, long double n);
 
 int				gcd(int x, int y);
 

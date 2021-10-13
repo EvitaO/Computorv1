@@ -17,7 +17,7 @@ class polynomial{
 		int							getDegree() const;
 		std::vector<float> 			getSolutions() const;
 		std::vector<std::string>	getSolutionsFrac() const;
-		float						getDiscriminant() const;
+		long double					getDiscriminant() const;
 
 		std::string					getOutput() const;
 		std::string					getOutput2() const;
@@ -39,7 +39,7 @@ class polynomial{
 		float						_a;
 		float						_b;
 		float						_c;
-		float						_discriminant;
+		long double					_discriminant;
 
 		int							_degree;
 

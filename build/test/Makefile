@@ -175,6 +175,78 @@ computer_test/fast:
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/build
 .PHONY : computer_test/fast
 
+gcd_test.o: gcd_test.cpp.o
+.PHONY : gcd_test.o
+
+# target to build an object file
+gcd_test.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.o
+.PHONY : gcd_test.cpp.o
+
+gcd_test.i: gcd_test.cpp.i
+.PHONY : gcd_test.i
+
+# target to preprocess a source file
+gcd_test.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.i
+.PHONY : gcd_test.cpp.i
+
+gcd_test.s: gcd_test.cpp.s
+.PHONY : gcd_test.s
+
+# target to generate assembly for a file
+gcd_test.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.s
+.PHONY : gcd_test.cpp.s
+
+getdegree_test.o: getdegree_test.cpp.o
+.PHONY : getdegree_test.o
+
+# target to build an object file
+getdegree_test.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o
+.PHONY : getdegree_test.cpp.o
+
+getdegree_test.i: getdegree_test.cpp.i
+.PHONY : getdegree_test.i
+
+# target to preprocess a source file
+getdegree_test.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.i
+.PHONY : getdegree_test.cpp.i
+
+getdegree_test.s: getdegree_test.cpp.s
+.PHONY : getdegree_test.s
+
+# target to generate assembly for a file
+getdegree_test.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.s
+.PHONY : getdegree_test.cpp.s
+
+getreduced_test.o: getreduced_test.cpp.o
+.PHONY : getreduced_test.o
+
+# target to build an object file
+getreduced_test.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o
+.PHONY : getreduced_test.cpp.o
+
+getreduced_test.i: getreduced_test.cpp.i
+.PHONY : getreduced_test.i
+
+# target to preprocess a source file
+getreduced_test.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.i
+.PHONY : getreduced_test.cpp.i
+
+getreduced_test.s: getreduced_test.cpp.s
+.PHONY : getreduced_test.s
+
+# target to generate assembly for a file
+getreduced_test.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.s
+.PHONY : getreduced_test.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -198,6 +270,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+setup_test.o: setup_test.cpp.o
+.PHONY : setup_test.o
+
+# target to build an object file
+setup_test.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.o
+.PHONY : setup_test.cpp.o
+
+setup_test.i: setup_test.cpp.i
+.PHONY : setup_test.i
+
+# target to preprocess a source file
+setup_test.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.i
+.PHONY : setup_test.cpp.i
+
+setup_test.s: setup_test.cpp.s
+.PHONY : setup_test.s
+
+# target to generate assembly for a file
+setup_test.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.s
+.PHONY : setup_test.cpp.s
 
 sqrt_test.o: sqrt_test.cpp.o
 .PHONY : sqrt_test.o
@@ -236,9 +332,21 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... computer_test"
+	@echo "... gcd_test.o"
+	@echo "... gcd_test.i"
+	@echo "... gcd_test.s"
+	@echo "... getdegree_test.o"
+	@echo "... getdegree_test.i"
+	@echo "... getdegree_test.s"
+	@echo "... getreduced_test.o"
+	@echo "... getreduced_test.i"
+	@echo "... getreduced_test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... setup_test.o"
+	@echo "... setup_test.i"
+	@echo "... setup_test.s"
 	@echo "... sqrt_test.o"
 	@echo "... sqrt_test.i"
 	@echo "... sqrt_test.s"

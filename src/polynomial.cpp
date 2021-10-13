@@ -67,7 +67,7 @@ void						polynomial::solve(){
 
 
 void						polynomial::solve2(){
-	float root = calculateroot(_discriminant);
+	long double root = calculateroot(_discriminant);
 	_solutions.push_back((-_b + root)/(2*_a));
 	_solutions.push_back((-_b - root)/(2*_a));
 }
@@ -99,7 +99,7 @@ void						polynomial::calculateFractions(){
 	}
 }
 
-float						polynomial::getDiscriminant() const{
+long double					polynomial::getDiscriminant() const{
 	return this->_discriminant;
 }
 
