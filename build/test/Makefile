@@ -175,77 +175,149 @@ computer_test/fast:
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/build
 .PHONY : computer_test/fast
 
-gcd_test.o: gcd_test.cpp.o
-.PHONY : gcd_test.o
+gcd_test_utils.o: gcd_test_utils.cpp.o
+.PHONY : gcd_test_utils.o
 
 # target to build an object file
-gcd_test.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.o
-.PHONY : gcd_test.cpp.o
+gcd_test_utils.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o
+.PHONY : gcd_test_utils.cpp.o
 
-gcd_test.i: gcd_test.cpp.i
-.PHONY : gcd_test.i
+gcd_test_utils.i: gcd_test_utils.cpp.i
+.PHONY : gcd_test_utils.i
 
 # target to preprocess a source file
-gcd_test.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.i
-.PHONY : gcd_test.cpp.i
+gcd_test_utils.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.i
+.PHONY : gcd_test_utils.cpp.i
 
-gcd_test.s: gcd_test.cpp.s
-.PHONY : gcd_test.s
+gcd_test_utils.s: gcd_test_utils.cpp.s
+.PHONY : gcd_test_utils.s
 
 # target to generate assembly for a file
-gcd_test.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test.cpp.s
-.PHONY : gcd_test.cpp.s
+gcd_test_utils.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.s
+.PHONY : gcd_test_utils.cpp.s
 
-getdegree_test.o: getdegree_test.cpp.o
-.PHONY : getdegree_test.o
+getABCD_test_polynomial.o: getABCD_test_polynomial.cpp.o
+.PHONY : getABCD_test_polynomial.o
 
 # target to build an object file
-getdegree_test.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o
-.PHONY : getdegree_test.cpp.o
+getABCD_test_polynomial.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o
+.PHONY : getABCD_test_polynomial.cpp.o
 
-getdegree_test.i: getdegree_test.cpp.i
-.PHONY : getdegree_test.i
+getABCD_test_polynomial.i: getABCD_test_polynomial.cpp.i
+.PHONY : getABCD_test_polynomial.i
 
 # target to preprocess a source file
-getdegree_test.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.i
-.PHONY : getdegree_test.cpp.i
+getABCD_test_polynomial.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.i
+.PHONY : getABCD_test_polynomial.cpp.i
 
-getdegree_test.s: getdegree_test.cpp.s
-.PHONY : getdegree_test.s
+getABCD_test_polynomial.s: getABCD_test_polynomial.cpp.s
+.PHONY : getABCD_test_polynomial.s
 
 # target to generate assembly for a file
-getdegree_test.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test.cpp.s
-.PHONY : getdegree_test.cpp.s
+getABCD_test_polynomial.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.s
+.PHONY : getABCD_test_polynomial.cpp.s
 
-getreduced_test.o: getreduced_test.cpp.o
-.PHONY : getreduced_test.o
+getdegree_test_validate.o: getdegree_test_validate.cpp.o
+.PHONY : getdegree_test_validate.o
 
 # target to build an object file
-getreduced_test.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o
-.PHONY : getreduced_test.cpp.o
+getdegree_test_validate.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o
+.PHONY : getdegree_test_validate.cpp.o
 
-getreduced_test.i: getreduced_test.cpp.i
-.PHONY : getreduced_test.i
+getdegree_test_validate.i: getdegree_test_validate.cpp.i
+.PHONY : getdegree_test_validate.i
 
 # target to preprocess a source file
-getreduced_test.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.i
-.PHONY : getreduced_test.cpp.i
+getdegree_test_validate.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.i
+.PHONY : getdegree_test_validate.cpp.i
 
-getreduced_test.s: getreduced_test.cpp.s
-.PHONY : getreduced_test.s
+getdegree_test_validate.s: getdegree_test_validate.cpp.s
+.PHONY : getdegree_test_validate.s
 
 # target to generate assembly for a file
-getreduced_test.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test.cpp.s
-.PHONY : getreduced_test.cpp.s
+getdegree_test_validate.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.s
+.PHONY : getdegree_test_validate.cpp.s
+
+getdiscriminant_test_polynomial.o: getdiscriminant_test_polynomial.cpp.o
+.PHONY : getdiscriminant_test_polynomial.o
+
+# target to build an object file
+getdiscriminant_test_polynomial.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o
+.PHONY : getdiscriminant_test_polynomial.cpp.o
+
+getdiscriminant_test_polynomial.i: getdiscriminant_test_polynomial.cpp.i
+.PHONY : getdiscriminant_test_polynomial.i
+
+# target to preprocess a source file
+getdiscriminant_test_polynomial.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.i
+.PHONY : getdiscriminant_test_polynomial.cpp.i
+
+getdiscriminant_test_polynomial.s: getdiscriminant_test_polynomial.cpp.s
+.PHONY : getdiscriminant_test_polynomial.s
+
+# target to generate assembly for a file
+getdiscriminant_test_polynomial.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.s
+.PHONY : getdiscriminant_test_polynomial.cpp.s
+
+getreduced_test_validate.o: getreduced_test_validate.cpp.o
+.PHONY : getreduced_test_validate.o
+
+# target to build an object file
+getreduced_test_validate.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o
+.PHONY : getreduced_test_validate.cpp.o
+
+getreduced_test_validate.i: getreduced_test_validate.cpp.i
+.PHONY : getreduced_test_validate.i
+
+# target to preprocess a source file
+getreduced_test_validate.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.i
+.PHONY : getreduced_test_validate.cpp.i
+
+getreduced_test_validate.s: getreduced_test_validate.cpp.s
+.PHONY : getreduced_test_validate.s
+
+# target to generate assembly for a file
+getreduced_test_validate.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.s
+.PHONY : getreduced_test_validate.cpp.s
+
+getsolutions_test_polynomial.o: getsolutions_test_polynomial.cpp.o
+.PHONY : getsolutions_test_polynomial.o
+
+# target to build an object file
+getsolutions_test_polynomial.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o
+.PHONY : getsolutions_test_polynomial.cpp.o
+
+getsolutions_test_polynomial.i: getsolutions_test_polynomial.cpp.i
+.PHONY : getsolutions_test_polynomial.i
+
+# target to preprocess a source file
+getsolutions_test_polynomial.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.i
+.PHONY : getsolutions_test_polynomial.cpp.i
+
+getsolutions_test_polynomial.s: getsolutions_test_polynomial.cpp.s
+.PHONY : getsolutions_test_polynomial.s
+
+# target to generate assembly for a file
+getsolutions_test_polynomial.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.s
+.PHONY : getsolutions_test_polynomial.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -271,53 +343,53 @@ main.cpp.s:
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-setup_test.o: setup_test.cpp.o
-.PHONY : setup_test.o
+setup_test_validate.o: setup_test_validate.cpp.o
+.PHONY : setup_test_validate.o
 
 # target to build an object file
-setup_test.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.o
-.PHONY : setup_test.cpp.o
+setup_test_validate.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o
+.PHONY : setup_test_validate.cpp.o
 
-setup_test.i: setup_test.cpp.i
-.PHONY : setup_test.i
+setup_test_validate.i: setup_test_validate.cpp.i
+.PHONY : setup_test_validate.i
 
 # target to preprocess a source file
-setup_test.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.i
-.PHONY : setup_test.cpp.i
+setup_test_validate.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.i
+.PHONY : setup_test_validate.cpp.i
 
-setup_test.s: setup_test.cpp.s
-.PHONY : setup_test.s
+setup_test_validate.s: setup_test_validate.cpp.s
+.PHONY : setup_test_validate.s
 
 # target to generate assembly for a file
-setup_test.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test.cpp.s
-.PHONY : setup_test.cpp.s
+setup_test_validate.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.s
+.PHONY : setup_test_validate.cpp.s
 
-sqrt_test.o: sqrt_test.cpp.o
-.PHONY : sqrt_test.o
+sqrt_test_utils.o: sqrt_test_utils.cpp.o
+.PHONY : sqrt_test_utils.o
 
 # target to build an object file
-sqrt_test.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o
-.PHONY : sqrt_test.cpp.o
+sqrt_test_utils.cpp.o:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o
+.PHONY : sqrt_test_utils.cpp.o
 
-sqrt_test.i: sqrt_test.cpp.i
-.PHONY : sqrt_test.i
+sqrt_test_utils.i: sqrt_test_utils.cpp.i
+.PHONY : sqrt_test_utils.i
 
 # target to preprocess a source file
-sqrt_test.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test.cpp.i
-.PHONY : sqrt_test.cpp.i
+sqrt_test_utils.cpp.i:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.i
+.PHONY : sqrt_test_utils.cpp.i
 
-sqrt_test.s: sqrt_test.cpp.s
-.PHONY : sqrt_test.s
+sqrt_test_utils.s: sqrt_test_utils.cpp.s
+.PHONY : sqrt_test_utils.s
 
 # target to generate assembly for a file
-sqrt_test.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test.cpp.s
-.PHONY : sqrt_test.cpp.s
+sqrt_test_utils.cpp.s:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.s
+.PHONY : sqrt_test_utils.cpp.s
 
 # Help Target
 help:
@@ -332,24 +404,33 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... computer_test"
-	@echo "... gcd_test.o"
-	@echo "... gcd_test.i"
-	@echo "... gcd_test.s"
-	@echo "... getdegree_test.o"
-	@echo "... getdegree_test.i"
-	@echo "... getdegree_test.s"
-	@echo "... getreduced_test.o"
-	@echo "... getreduced_test.i"
-	@echo "... getreduced_test.s"
+	@echo "... gcd_test_utils.o"
+	@echo "... gcd_test_utils.i"
+	@echo "... gcd_test_utils.s"
+	@echo "... getABCD_test_polynomial.o"
+	@echo "... getABCD_test_polynomial.i"
+	@echo "... getABCD_test_polynomial.s"
+	@echo "... getdegree_test_validate.o"
+	@echo "... getdegree_test_validate.i"
+	@echo "... getdegree_test_validate.s"
+	@echo "... getdiscriminant_test_polynomial.o"
+	@echo "... getdiscriminant_test_polynomial.i"
+	@echo "... getdiscriminant_test_polynomial.s"
+	@echo "... getreduced_test_validate.o"
+	@echo "... getreduced_test_validate.i"
+	@echo "... getreduced_test_validate.s"
+	@echo "... getsolutions_test_polynomial.o"
+	@echo "... getsolutions_test_polynomial.i"
+	@echo "... getsolutions_test_polynomial.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... setup_test.o"
-	@echo "... setup_test.i"
-	@echo "... setup_test.s"
-	@echo "... sqrt_test.o"
-	@echo "... sqrt_test.i"
-	@echo "... sqrt_test.s"
+	@echo "... setup_test_validate.o"
+	@echo "... setup_test_validate.i"
+	@echo "... setup_test_validate.s"
+	@echo "... sqrt_test_utils.o"
+	@echo "... sqrt_test_utils.i"
+	@echo "... sqrt_test_utils.s"
 .PHONY : help
 
 

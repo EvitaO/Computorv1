@@ -8,12 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test.cpp" "test/CMakeFiles/computer_test.dir/gcd_test.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/gcd_test.cpp.o.d"
-  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test.cpp" "test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o.d"
-  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test.cpp" "test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test_utils.cpp" "test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getABCD_test_polynomial.cpp" "test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test_validate.cpp" "test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getdiscriminant_test_polynomial.cpp" "test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test_validate.cpp" "test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/getsolutions_test_polynomial.cpp" "test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o.d"
   "/Users/eovertoo/projects-advanced/computerv1cmake/test/main.cpp" "test/CMakeFiles/computer_test.dir/main.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/main.cpp.o.d"
-  "/Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test.cpp" "test/CMakeFiles/computer_test.dir/setup_test.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/setup_test.cpp.o.d"
-  "/Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test.cpp" "test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test_validate.cpp" "test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o.d"
+  "/Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test_utils.cpp" "test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o" "gcc" "test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o.d"
   )
 
 # Targets to which this target links.

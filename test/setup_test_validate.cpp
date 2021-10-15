@@ -26,8 +26,7 @@ TEST(setup, ValidInput){
     EXPECT_NO_THROW(k.setup());
     validate l("- 9.3 * X^1 + 2 * X^2 = 0.1 * X^1 + .3 * X^1");
     EXPECT_NO_THROW(l.setup());
-    //not sure if i want this . = 0
-    validate m(". * X^1 = 3 * X^2");
+    validate m(".3 * X^1 = 3 * X^2");
     EXPECT_NO_THROW(m.setup());
     validate n("3 * X^1 - 1 * X^1 = 7.5 * X^2 - 1.11 * X^1");
     EXPECT_NO_THROW(n.setup());
@@ -62,7 +61,7 @@ TEST(setup, InvalidInput){
     EXPECT_THROW(a.setup(), std::exception);
     validate b("0 * X^2 = 1 * X^1 +- 5 * X^1");
     EXPECT_THROW(b.setup(), std::exception);
-    validate c("#");
+    validate c(". * X^1 = 3 * X^2");
     EXPECT_THROW(c.setup(), std::exception);
     validate d("3 * X^1 = a");
     EXPECT_THROW(d.setup(), std::exception);
@@ -82,7 +81,7 @@ TEST(setup, InvalidInput){
     EXPECT_THROW(k.setup(), std::exception);
     validate l("");
     EXPECT_THROW(l.setup(), std::exception);
-    validate m("3");
+    validate m("7 * X^1 = 0.5");
     EXPECT_THROW(m.setup(), std::exception);
     validate n("3 -- X^1 = 0");
     EXPECT_THROW(n.setup(), std::exception);

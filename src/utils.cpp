@@ -3,11 +3,13 @@
 
 std::string		stringNumber(std::string input, int i){
 	std::string	number;
-	if (input[i] == '.')
+	if (input[i] == '.' && isdigit(input[i + 1]))
 	{
 		number += "0.";
 		i++;
 	}
+	else if (input[i] == '.')
+		throw std::runtime_error("invalid format");
 	while (isdigit(input[i])){
 		number += input[i];
 		if (input[i + 1] == '.'){

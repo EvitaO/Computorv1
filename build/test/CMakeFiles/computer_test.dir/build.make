@@ -83,99 +83,147 @@ test/CMakeFiles/computer_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/main.cpp.s"
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/main.cpp -o CMakeFiles/computer_test.dir/main.cpp.s
 
-test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
-test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o: ../test/sqrt_test.cpp
-test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o -MF CMakeFiles/computer_test.dir/sqrt_test.cpp.o.d -o CMakeFiles/computer_test.dir/sqrt_test.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test.cpp
+test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o: ../test/sqrt_test_utils.cpp
+test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o -MF CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o.d -o CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test_utils.cpp
 
-test/CMakeFiles/computer_test.dir/sqrt_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/sqrt_test.cpp.i"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test.cpp > CMakeFiles/computer_test.dir/sqrt_test.cpp.i
+test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test_utils.cpp > CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.i
 
-test/CMakeFiles/computer_test.dir/sqrt_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/sqrt_test.cpp.s"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test.cpp -o CMakeFiles/computer_test.dir/sqrt_test.cpp.s
+test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/sqrt_test_utils.cpp -o CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.s
 
-test/CMakeFiles/computer_test.dir/gcd_test.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
-test/CMakeFiles/computer_test.dir/gcd_test.cpp.o: ../test/gcd_test.cpp
-test/CMakeFiles/computer_test.dir/gcd_test.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/computer_test.dir/gcd_test.cpp.o"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/gcd_test.cpp.o -MF CMakeFiles/computer_test.dir/gcd_test.cpp.o.d -o CMakeFiles/computer_test.dir/gcd_test.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test.cpp
+test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o: ../test/gcd_test_utils.cpp
+test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o -MF CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o.d -o CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test_utils.cpp
 
-test/CMakeFiles/computer_test.dir/gcd_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/gcd_test.cpp.i"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test.cpp > CMakeFiles/computer_test.dir/gcd_test.cpp.i
+test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/gcd_test_utils.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test_utils.cpp > CMakeFiles/computer_test.dir/gcd_test_utils.cpp.i
 
-test/CMakeFiles/computer_test.dir/gcd_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/gcd_test.cpp.s"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test.cpp -o CMakeFiles/computer_test.dir/gcd_test.cpp.s
+test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/gcd_test_utils.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/gcd_test_utils.cpp -o CMakeFiles/computer_test.dir/gcd_test_utils.cpp.s
 
-test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
-test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o: ../test/getdegree_test.cpp
-test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o -MF CMakeFiles/computer_test.dir/getdegree_test.cpp.o.d -o CMakeFiles/computer_test.dir/getdegree_test.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test.cpp
+test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o: ../test/getdegree_test_validate.cpp
+test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o -MF CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o.d -o CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test_validate.cpp
 
-test/CMakeFiles/computer_test.dir/getdegree_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getdegree_test.cpp.i"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test.cpp > CMakeFiles/computer_test.dir/getdegree_test.cpp.i
+test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test_validate.cpp > CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.i
 
-test/CMakeFiles/computer_test.dir/getdegree_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getdegree_test.cpp.s"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test.cpp -o CMakeFiles/computer_test.dir/getdegree_test.cpp.s
+test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getdegree_test_validate.cpp -o CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.s
 
-test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
-test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o: ../test/getreduced_test.cpp
-test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o -MF CMakeFiles/computer_test.dir/getreduced_test.cpp.o.d -o CMakeFiles/computer_test.dir/getreduced_test.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test.cpp
+test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o: ../test/getreduced_test_validate.cpp
+test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o -MF CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o.d -o CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test_validate.cpp
 
-test/CMakeFiles/computer_test.dir/getreduced_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getreduced_test.cpp.i"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test.cpp > CMakeFiles/computer_test.dir/getreduced_test.cpp.i
+test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test_validate.cpp > CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.i
 
-test/CMakeFiles/computer_test.dir/getreduced_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getreduced_test.cpp.s"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test.cpp -o CMakeFiles/computer_test.dir/getreduced_test.cpp.s
+test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getreduced_test_validate.cpp -o CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.s
 
-test/CMakeFiles/computer_test.dir/setup_test.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
-test/CMakeFiles/computer_test.dir/setup_test.cpp.o: ../test/setup_test.cpp
-test/CMakeFiles/computer_test.dir/setup_test.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/computer_test.dir/setup_test.cpp.o"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/setup_test.cpp.o -MF CMakeFiles/computer_test.dir/setup_test.cpp.o.d -o CMakeFiles/computer_test.dir/setup_test.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test.cpp
+test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o: ../test/setup_test_validate.cpp
+test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o -MF CMakeFiles/computer_test.dir/setup_test_validate.cpp.o.d -o CMakeFiles/computer_test.dir/setup_test_validate.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test_validate.cpp
 
-test/CMakeFiles/computer_test.dir/setup_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/setup_test.cpp.i"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test.cpp > CMakeFiles/computer_test.dir/setup_test.cpp.i
+test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/setup_test_validate.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test_validate.cpp > CMakeFiles/computer_test.dir/setup_test_validate.cpp.i
 
-test/CMakeFiles/computer_test.dir/setup_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/setup_test.cpp.s"
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test.cpp -o CMakeFiles/computer_test.dir/setup_test.cpp.s
+test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/setup_test_validate.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/setup_test_validate.cpp -o CMakeFiles/computer_test.dir/setup_test_validate.cpp.s
+
+test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o: ../test/getABCD_test_polynomial.cpp
+test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o -MF CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o.d -o CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getABCD_test_polynomial.cpp
+
+test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getABCD_test_polynomial.cpp > CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.i
+
+test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getABCD_test_polynomial.cpp -o CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.s
+
+test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o: ../test/getdiscriminant_test_polynomial.cpp
+test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o -MF CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o.d -o CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getdiscriminant_test_polynomial.cpp
+
+test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getdiscriminant_test_polynomial.cpp > CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.i
+
+test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getdiscriminant_test_polynomial.cpp -o CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.s
+
+test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/flags.make
+test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o: ../test/getsolutions_test_polynomial.cpp
+test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o: test/CMakeFiles/computer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o -MF CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o.d -o CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o -c /Users/eovertoo/projects-advanced/computerv1cmake/test/getsolutions_test_polynomial.cpp
+
+test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.i"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eovertoo/projects-advanced/computerv1cmake/test/getsolutions_test_polynomial.cpp > CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.i
+
+test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.s"
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eovertoo/projects-advanced/computerv1cmake/test/getsolutions_test_polynomial.cpp -o CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.s
 
 # Object files for target computer_test
 computer_test_OBJECTS = \
 "CMakeFiles/computer_test.dir/main.cpp.o" \
-"CMakeFiles/computer_test.dir/sqrt_test.cpp.o" \
-"CMakeFiles/computer_test.dir/gcd_test.cpp.o" \
-"CMakeFiles/computer_test.dir/getdegree_test.cpp.o" \
-"CMakeFiles/computer_test.dir/getreduced_test.cpp.o" \
-"CMakeFiles/computer_test.dir/setup_test.cpp.o"
+"CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o" \
+"CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o" \
+"CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o" \
+"CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o" \
+"CMakeFiles/computer_test.dir/setup_test_validate.cpp.o" \
+"CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o" \
+"CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o" \
+"CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o"
 
 # External object files for target computer_test
 computer_test_EXTERNAL_OBJECTS =
 
 test/computer_test: test/CMakeFiles/computer_test.dir/main.cpp.o
-test/computer_test: test/CMakeFiles/computer_test.dir/sqrt_test.cpp.o
-test/computer_test: test/CMakeFiles/computer_test.dir/gcd_test.cpp.o
-test/computer_test: test/CMakeFiles/computer_test.dir/getdegree_test.cpp.o
-test/computer_test: test/CMakeFiles/computer_test.dir/getreduced_test.cpp.o
-test/computer_test: test/CMakeFiles/computer_test.dir/setup_test.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/sqrt_test_utils.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/gcd_test_utils.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/getdegree_test_validate.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/getreduced_test_validate.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/setup_test_validate.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/getABCD_test_polynomial.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/getdiscriminant_test_polynomial.cpp.o
+test/computer_test: test/CMakeFiles/computer_test.dir/getsolutions_test_polynomial.cpp.o
 test/computer_test: test/CMakeFiles/computer_test.dir/build.make
 test/computer_test: src/libcomputer_lib.a
 test/computer_test: lib/libgtestd.a
 test/computer_test: test/CMakeFiles/computer_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable computer_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable computer_test"
 	cd /Users/eovertoo/projects-advanced/computerv1cmake/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/computer_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
