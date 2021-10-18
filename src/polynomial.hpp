@@ -23,10 +23,12 @@ class polynomial{
 		std::string					getOutput2() const;
 
 		std::string					getSteps(int i) const;
+		std::string					getStepsNegative() const;
 		std::string					getStepsD() const;
 
 		void						solve();
 		void						solve2();
+		void						solveNegative();
 		
 
 		void						calculateDiscriminant();

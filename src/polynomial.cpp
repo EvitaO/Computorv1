@@ -46,6 +46,28 @@ std::vector<std::string>	polynomial::getSolutionsFrac() const{
 	return this->_solutionsfraction;
 }
 
+void						polynomial::solveNegative(){
+	long double root = calculateroot(_discriminant * -1);
+	if (-_b / (2*_a) / static_cast<int>(-_b / (2*_a)) == 1 && (root / (2*_a)) / static_cast<int>(root / (2*_a)) == 1){
+		int x = -_b / (2*_a);
+		int y = root / (2*_a);
+		std::stringstream	str;
+		str << x << " + " << y << "i";
+		_solutionsfraction.push_back(str.str());
+		str.str("");
+		str << x << " - " << y << "i";
+		_solutionsfraction.push_back(str.str());
+	}
+	else{
+		std::stringstream	str;
+		str << "(" << -_b << " + " << root << "i) / " << 2*_a;
+		_solutionsfraction.push_back(str.str());
+		str.str("");
+		str << "(" << -_b << " - " << root << "i) / " << 2*_a;
+		_solutionsfraction.push_back(str.str());
+	}
+}
+
 void						polynomial::solve(){
 	if (_degree == 2){
 		calculateDiscriminant();
@@ -55,6 +77,9 @@ void						polynomial::solve(){
 			_solutions.push_back(-_b/(2*_a));
 		else if (_discriminant > 0)
 			solve2();
+		else
+			solveNegative();
+		
 	}
 	if (_degree == 1){
 		if (_c == 0)
@@ -68,8 +93,14 @@ void						polynomial::solve(){
 
 void						polynomial::solve2(){
 	long double root = calculateroot(_discriminant);
-	_solutions.push_back((-_b + root)/(2*_a));
-	_solutions.push_back((-_b - root)/(2*_a));
+	if (-_b + static_cast<float>(root) == 0)
+		_solutions.push_back(0/(2*_a));
+	else
+		_solutions.push_back((-_b + root)/(2*_a));
+	if (-_b - static_cast<float>(root) == 0)
+		_solutions.push_back(0/(2*_a));
+	else
+		_solutions.push_back((-_b - root)/(2*_a));
 }
 
 void						polynomial::calculateDiscriminant(){
@@ -117,7 +148,7 @@ std::string					polynomial::getSteps(int i) const{
 		s << "x = -b / (2*a)\n" << "x = " << -_b << " / (2*" << _a << ")\n" << "x = " << -_b << " / " << 2*_a << std::endl;
 		return s.str();
 	}
-	if (getSolutions()[i] == ((-_b + calculateroot(_discriminant))/(2*_a))){
+	if (i == 0){
 		s << "x = (-b + sqrt(discriminant))/2 * a\n" << "x = (" << (-_b) << " + sqrt(" << _discriminant << ")) / (2 * " << _a << ")" << std::endl;
 		s << "x = " << (-_b + calculateroot(_discriminant)) << " / " << (2 * _a) << std::endl;  	
 		return s.str();
@@ -127,6 +158,17 @@ std::string					polynomial::getSteps(int i) const{
 		s << "x = " << (-_b - calculateroot(_discriminant)) << " / " << (2 * _a) << std::endl;  	
 		return s.str();
 	}
+}
+
+std::string					polynomial::getStepsNegative() const{
+	std::stringstream s;
+
+	s << "x = (-b +-i sqrt(discriminant * -1))/2 * a\n" << "x = (" << (-_b) << " +-i sqrt(" << (_discriminant * -1) << ")) / (2 * " << _a << ")" << std::endl;
+	s << "x = " << "(" << -_b << " +-i " << calculateroot(_discriminant * -1) << ")" << " / " << (2 * _a) << std::endl << std::endl;
+	s << "x = " << _solutionsfraction[0] << std::endl;
+	s << "or" << std::endl;
+	s << "x = " << _solutionsfraction[1] << std::endl;
+	return s.str();
 }
 
 std::string					polynomial::getOutput2() const{
@@ -149,14 +191,14 @@ std::string					polynomial::getOutput2() const{
 			s << "	=	" << getSolutionsFrac()[0];
 	}
 	else
-		s << getStepsD() << "Discriminant is negative, so no real solution possible";
+		s << getStepsD() << "Discriminant is negative, so only complex solutions\n" << getStepsNegative();
 	return s.str();
 }
 
 std::string					polynomial::getOutput() const{
 	if (getDegree() == 0){
 		if (_c == 0)
-			return "Every number is a solutions";
+			return "Every real number is a solutions";
 		else
 			return "No solution possible";
 	}
