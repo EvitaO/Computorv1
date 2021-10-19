@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/computer_run"
+			"path" : "src/computer"
 		}
 	],
 	"backtrace" : 1,
@@ -77,7 +77,7 @@
 			]
 		}
 	],
-	"id" : "computer_run::@145eef247bfb46b6828c",
+	"id" : "computer::@145eef247bfb46b6828c",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -93,8 +93,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "computer_run",
-	"nameOnDisk" : "computer_run",
+	"name" : "computer",
+	"nameOnDisk" : "computer",
 	"paths" : 
 	{
 		"build" : "src",

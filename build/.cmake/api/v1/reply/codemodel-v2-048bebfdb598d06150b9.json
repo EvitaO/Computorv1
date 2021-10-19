@@ -176,16 +176,16 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "computer_lib::@145eef247bfb46b6828c",
-					"jsonFile" : "target-computer_lib-Debug-252223ee66ece030c6c1.json",
-					"name" : "computer_lib",
+					"id" : "computer::@145eef247bfb46b6828c",
+					"jsonFile" : "target-computer-Debug-f112344b9e0005c19d94.json",
+					"name" : "computer",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "computer_run::@145eef247bfb46b6828c",
-					"jsonFile" : "target-computer_run-Debug-aad482ff31544fe631b1.json",
-					"name" : "computer_run",
+					"id" : "computer_lib::@145eef247bfb46b6828c",
+					"jsonFile" : "target-computer_lib-Debug-252223ee66ece030c6c1.json",
+					"name" : "computer_lib",
 					"projectIndex" : 0
 				},
 				{

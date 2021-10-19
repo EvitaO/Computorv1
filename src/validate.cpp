@@ -1,10 +1,12 @@
 #include "validate.hpp"
+#include "header.hpp"
 
 validate::validate(){}
 
 validate::validate(std::string str){
 	_input = str;
-	_eq = 1;
+	_equal = 1;
+	_nbr = 0;
 }
 
 validate::validate(validate const & src){
@@ -18,8 +20,17 @@ validate &	validate::operator=(validate const & src){
 	_reducedform = src._reducedform;
 	_chunks = src._chunks;
 	_order = src._order;
-	_eq = src._eq;
+	_degree = src._degree;
+	_nbr = src._nbr;
+	_equal = src._equal;
 	return *this;
+}
+
+void		validate::setup(){
+	createChunks();
+	controlChunks();
+	setDegree();
+	createReduced();
 }
 
 void		validate::createChunks(){
@@ -29,27 +40,58 @@ void		validate::createChunks(){
 		throw std::runtime_error("input format is not correct");
 	while (_input[pos] != '\0'){
 		if (_input.find("^") != std::string::npos){
-			end = _input.find("^") + 2;
+			end = _input.find("^");
+			while (_input[end] != ' ' && _input[end] != '\0')
+				end++;
 			_chunks.push_back(_input.substr(pos, end));
 			_input.erase(pos, end + 1);
 		}
-		else if (_input == "= 0")
+		else if (atof(&_input[2]) == 0 && isdigit(_input[2]))
 			break;
 		else
 			throw std::runtime_error("input format is not correct");
 	}
-#if 0
-	for(int i = 0; i < _chunks.size(); i++){
-		std::cout << _chunks[i] << std::endl;
+}
+
+void		validate::controlChunks(){
+	for (int i = 0; i < _chunks.size(); i++){
+		controlChunk(_chunks[i]);
 	}
-#endif
+}
+
+void		validate::controlChunk(std::string input){
+	int		sign = 1;
+	int		i = 0;
+	int		exp = 0;
+	
+	i = checkSigns(input, i);
+	if (i < 0){
+		sign = -1;
+		i = i * -1;
+	}
+	i = saveNbr(input, i, sign);
+	while (i < input.size()){
+		if (input[i] == ' ' && input[i + 1] == '*' && input[i + 2] == ' ');
+		else if (charX(input[i]) && input[i + 1] == '^' && isdigit(input[i + 2])){
+			exp = stoi(stringNumber(input, i + 2));
+			while (isdigit(input[i+3]))
+				i++;
+		}
+		else{
+			throw std::runtime_error("invalid format");
+			return;
+		}
+		i = i + 3;
+	}
+	addpair(_nbr, exp);
+	_nbr = 0;
 }
 
 int			validate::checkSigns(std::string input, int i){
 	int 	sign = 1;
 	if (input[i] == '=' && input[i + 1] == ' '){
 		i = i + 2;
-		_eq *= -1;
+		_equal *= -1;
 	}
 	if (input[i] == '+' && input[i + 1] == ' ')
 		i = i + 2;
@@ -57,7 +99,7 @@ int			validate::checkSigns(std::string input, int i){
 		i = i + 2;
 		sign *= -1;
 	}
-	return i * sign * _eq;
+	return i * sign * _equal;
 }
 
 int		validate::saveNbr(std::string input, int i, int sign){
@@ -75,43 +117,14 @@ int		validate::saveNbr(std::string input, int i, int sign){
 	return i;
 }
 
-void		validate::controlChunk(std::string input){
-	int		sign = 1;
-	int		i = 0;
-	int		exp = 0;
-	
-	i = checkSigns(input, i);
-	if (i < 0){
-		sign = -1;
-		i = i * -1;
-	}
-	i = saveNbr(input, i, sign);
-	while (i < input.size()){
-		if (input[i] == ' ' && input[i + 1] == '*' && input[i + 2] == ' ');
-		else if (input[i] == 'x' && input[i + 1] == '^' && isdigit(input[i + 2]) && input[i + 3] == '\0')
-			exp = input[i + 2] - 48;
-		else if (input[i] == 'X' && input[i + 1] == '^' && isdigit(input[i + 2]))
-			exp = input[i + 2] - 48;
-		else{
-			throw std::runtime_error("invalid format");
-			return;
-		}
-		i = i + 3;
-	}
-	addpair(_nbr, exp);
-	_nbr = 0;
-}
-
-void		validate::controlChunks(){
-	for (int i = 0; i < _chunks.size(); i++){
-		controlChunk(_chunks[i]);
-	}
-}
-
 void		validate::setDegree(){
 	std::vector<std::pair<float, int> >::iterator	x = std::max_element(_order.begin(), _order.end(), compare);
 	_degree = _order[std::distance(_order.begin(), x)].second;
 }	
+
+int			validate::getDegree() const{
+	return _degree;
+}
 
 void		validate::addpair(float n, int exp){
 	for (int i = 0; i < _order.size(); i++){
@@ -153,17 +166,6 @@ void		validate::createReduced(){
 	_reducedform = s.str();
 }
 
-void		validate::setup(){
-	createChunks();
-	controlChunks();
-	setDegree();
-	createReduced();
-}
-
-int			validate::getDegree() const{
-	return _degree;
-}
-
 std::string	validate::getReduced() const{
 	return _reducedform;
 }
@@ -176,8 +178,7 @@ float		validate::getFloat(int exp){
 	return 0;
 }
 
-std::ostream &			operator<<(std::ostream & o, validate const & src){
-	
+std::ostream &			operator<<(std::ostream & o, validate const & src){	
 	o << "Reduced form: " << src.getReduced();
 	o << "Polynomial degree: " << src.getDegree();
 	if (src.getDegree() > 2){

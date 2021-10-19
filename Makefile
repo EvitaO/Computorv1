@@ -5,9 +5,9 @@ COLOR_DEFAULT = $(shell printf "\e[39m")
 
 NAME = computor
 
-OBJ = main.o polynomial.o validate.o utils.o
+OBJ = ./src/main.o ./src/polynomial.o ./src/validate.o ./src/utils.o
 
-HEADER = polunomial.hpp validate.hpp header.hpp
+HEADER = ./src/polunomial.hpp ./src/validate.hpp ./src/header.hpp
 
 FLAGS = -Wall -Wextra -Werror
 

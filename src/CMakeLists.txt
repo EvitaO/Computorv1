@@ -11,6 +11,6 @@ set(SOURCES
     validate.hpp
 )
 
-add_executable(${BINARY}_run ${SOURCES})
+add_executable(${BINARY} ${SOURCES})
 
 add_library(${BINARY}_lib ${SOURCES})

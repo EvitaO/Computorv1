@@ -5,9 +5,9 @@ TEST(getDegree, ValidInput){
     validate x("3 * X^2 = 0");
     x.setup();
     EXPECT_EQ(x.getDegree(), 2);
-    validate y("3.23 * X^2 - 2.5 * X^8 = 0");
+    validate y("3.23 * X^2 - 2.5 * X^81 = 0");
     y.setup();
-    EXPECT_EQ(y.getDegree(), 8);
+    EXPECT_EQ(y.getDegree(), 81);
     validate z("3 * X^0 = 1.78 * X^1");
     z.setup();
     EXPECT_EQ(z.getDegree(), 1);

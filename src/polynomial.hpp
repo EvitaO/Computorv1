@@ -9,7 +9,7 @@ class polynomial{
 		polynomial(polynomial const & src);
 		~polynomial();
 
-		polynomial &		operator=(polynomial const & src);
+		polynomial &				operator=(polynomial const & src);
 
 		float 						getA() const;
 		float 						getB() const;

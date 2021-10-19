@@ -162,19 +162,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named computer_run
-
-# Build rule for target.
-computer_run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_run
-.PHONY : computer_run
-
-# fast build rule for target.
-computer_run/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_run.dir/build.make src/CMakeFiles/computer_run.dir/build
-.PHONY : computer_run/fast
-
-#=============================================================================
 # Target rules for targets named computer_lib
 
 # Build rule for target.
@@ -186,6 +173,19 @@ computer_lib: cmake_check_build_system
 computer_lib/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/build
 .PHONY : computer_lib/fast
+
+#=============================================================================
+# Target rules for targets named computer
+
+# Build rule for target.
+computer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer
+.PHONY : computer
+
+# fast build rule for target.
+computer/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/build
+.PHONY : computer/fast
 
 #=============================================================================
 # Target rules for targets named computer_test
@@ -264,8 +264,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... computer"
 	@echo "... computer_lib"
-	@echo "... computer_run"
 	@echo "... computer_test"
 	@echo "... gmock"
 	@echo "... gmock_main"

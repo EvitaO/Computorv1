@@ -21,6 +21,12 @@ std::string		stringNumber(std::string input, int i){
 	return number;
 }
 
+bool		charX(char a){
+	if (a == 'x' || a == 'X')
+		return true;
+	return false;
+}
+
 bool		compare(std::pair<float, int> p1, std::pair<float, int> p2){
 		if (p1.first == 0)
 			return true;
@@ -36,7 +42,6 @@ long double	findrange(long double n){
 }
 
 void		smallerrange(long double *i, long double *j, long double n){
-	//while (*i * *i - n  > 0.0001){
 	while(1){
 		float mid = (*i + *j)/2 * (*i + *j)/2;
 		if (*j == (*i + *j)/2 || *i == (*i + *j)/2)

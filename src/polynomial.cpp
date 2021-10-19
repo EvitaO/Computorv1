@@ -5,6 +5,7 @@ polynomial::polynomial(float a, float b, float c, int degree){
 	_b = b;
 	_c = c;
 	_degree = degree;
+	_discriminant = 0;
 }
 
 polynomial::polynomial(polynomial const & src){
@@ -18,7 +19,9 @@ polynomial &				polynomial::operator=(polynomial const & src){
 	_b = src.getB();
 	_c = src.getC();
 	_degree = src.getDegree();
+	_discriminant = src.getDiscriminant();
 	_solutions = src.getSolutions();
+	_solutionsfraction = src.getSolutionsFrac();
 	return *this;
 }
 
@@ -36,6 +39,10 @@ float 						polynomial::getC() const{
 
 int							polynomial::getDegree() const{
 	return this->_degree;
+}
+
+long double					polynomial::getDiscriminant() const{
+	return this->_discriminant;
 }
 
 std::vector<float> 			polynomial::getSolutions() const{
@@ -128,10 +135,6 @@ void						polynomial::calculateFractions(){
 		else
 			_solutionsfraction.push_back("0");
 	}
-}
-
-long double					polynomial::getDiscriminant() const{
-	return this->_discriminant;
 }
 
 std::string					polynomial::getStepsD() const{

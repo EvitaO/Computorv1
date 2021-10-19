@@ -21,6 +21,7 @@ void		    smallerrange(long double *i, long double *j, long double n);
 
 int				gcd(int x, int y);
 
+bool		    charX(char a);
 
 
 #endif
