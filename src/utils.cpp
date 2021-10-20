@@ -1,23 +1,28 @@
-#include "header.hpp"
+#include "utils.hpp"
 #include <cstring>
 
-std::string		stringNumber(std::string input, int i){
+std::string		createStringNumber(std::string input, int i){
 	std::string	number;
+	int point = 0;
 	if (input[i] == '.' && isdigit(input[i + 1]))
 	{
 		number += "0.";
+		point++;
 		i++;
 	}
 	else if (input[i] == '.')
 		throw std::runtime_error("invalid format");
-	while (isdigit(input[i])){
+	while (isdigit(input[i]) && point <= 1){
 		number += input[i];
 		if (input[i + 1] == '.'){
 			number += input[i + 1];
 			i++;
+			point++;
 		}
 		i++;
 	}
+	if (point > 1)
+		throw std::runtime_error("invalid format");
 	return number;
 }
 
@@ -27,21 +32,13 @@ bool		charX(char a){
 	return false;
 }
 
-bool		compare(std::pair<float, int> p1, std::pair<float, int> p2){
-		if (p1.first == 0)
-			return true;
-		if (p2.first == 0)
-			return false;
-		return p1.second<p2.second;
-}
-
-long double	findrange(long double n){
+long double	findRangeRoot(long double n){
 	long double i = 0;
 	for (; i * i < n ; i++){}
 	return i;
 }
 
-void		smallerrange(long double *i, long double *j, long double n){
+void		reduceRangeRoot(long double *i, long double *j, long double n){
 	while(1){
 		float mid = (*i + *j)/2 * (*i + *j)/2;
 		if (*j == (*i + *j)/2 || *i == (*i + *j)/2)
@@ -54,16 +51,16 @@ void		smallerrange(long double *i, long double *j, long double n){
 	}
 }
 
-long double		calculateroot(long double n){
+long double		calculateRoot(long double n){
 	long double i = 0.0;
 	long double j = 0.0;
 	if (n < 0)
 		return 0.0/0.0;
-	i = findrange(n);
+	i = findRangeRoot(n);
 	if (i * i == n)
 		return i;
 	j = i - 1;
-	smallerrange(&i, &j, n);
+	reduceRangeRoot(&i, &j, n);
 	i = i - 0.000000001;
     for (; j*j < n; j = j + 0.000000001){
 		if (i == j)

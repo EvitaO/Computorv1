@@ -83,9 +83,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/computer_lib.dir/DependInfo.cmake"
-  "src/CMakeFiles/computer.dir/DependInfo.cmake"
-  "test/CMakeFiles/computer_test.dir/DependInfo.cmake"
+  "src/CMakeFiles/computor_lib.dir/DependInfo.cmake"
+  "src/CMakeFiles/computor.dir/DependInfo.cmake"
+  "test/CMakeFiles/computor_test.dir/DependInfo.cmake"
   "lib/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "lib/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "lib/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"

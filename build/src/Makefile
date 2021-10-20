@@ -65,18 +65,6 @@ CMAKE_BINARY_DIR = /Users/eovertoo/projects-advanced/computerv1cmake/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -101,15 +89,6 @@ install/fast: preinstall/fast
 	/Users/eovertoo/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -129,6 +108,27 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Users/eovertoo/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -162,40 +162,40 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/computer_lib.dir/rule:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computer_lib.dir/rule
-.PHONY : src/CMakeFiles/computer_lib.dir/rule
+src/CMakeFiles/computor_lib.dir/rule:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computor_lib.dir/rule
+.PHONY : src/CMakeFiles/computor_lib.dir/rule
 
 # Convenience name for target.
-computer_lib: src/CMakeFiles/computer_lib.dir/rule
-.PHONY : computer_lib
+computor_lib: src/CMakeFiles/computor_lib.dir/rule
+.PHONY : computor_lib
 
 # fast build rule for target.
-computer_lib/fast:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/build
-.PHONY : computer_lib/fast
+computor_lib/fast:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/build
+.PHONY : computor_lib/fast
 
 # Convenience name for target.
-src/CMakeFiles/computer.dir/rule:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computer.dir/rule
-.PHONY : src/CMakeFiles/computer.dir/rule
+src/CMakeFiles/computor.dir/rule:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computor.dir/rule
+.PHONY : src/CMakeFiles/computor.dir/rule
 
 # Convenience name for target.
-computer: src/CMakeFiles/computer.dir/rule
-.PHONY : computer
+computor: src/CMakeFiles/computor.dir/rule
+.PHONY : computor
 
 # fast build rule for target.
-computer/fast:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/build
-.PHONY : computer/fast
+computor/fast:
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/build
+.PHONY : computor/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/main.cpp.o
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/main.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/main.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -203,8 +203,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/main.cpp.i
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/main.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/main.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -212,8 +212,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/main.cpp.s
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/main.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/main.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 polynomial.o: polynomial.cpp.o
@@ -221,8 +221,8 @@ polynomial.o: polynomial.cpp.o
 
 # target to build an object file
 polynomial.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/polynomial.cpp.o
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/polynomial.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/polynomial.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/polynomial.cpp.o
 .PHONY : polynomial.cpp.o
 
 polynomial.i: polynomial.cpp.i
@@ -230,8 +230,8 @@ polynomial.i: polynomial.cpp.i
 
 # target to preprocess a source file
 polynomial.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/polynomial.cpp.i
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/polynomial.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/polynomial.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/polynomial.cpp.i
 .PHONY : polynomial.cpp.i
 
 polynomial.s: polynomial.cpp.s
@@ -239,8 +239,8 @@ polynomial.s: polynomial.cpp.s
 
 # target to generate assembly for a file
 polynomial.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/polynomial.cpp.s
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/polynomial.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/polynomial.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/polynomial.cpp.s
 .PHONY : polynomial.cpp.s
 
 utils.o: utils.cpp.o
@@ -248,8 +248,8 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/utils.cpp.o
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/utils.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/utils.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -257,8 +257,8 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/utils.cpp.i
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/utils.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/utils.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -266,8 +266,8 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/utils.cpp.s
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/utils.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/utils.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 validate.o: validate.cpp.o
@@ -275,8 +275,8 @@ validate.o: validate.cpp.o
 
 # target to build an object file
 validate.cpp.o:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/validate.cpp.o
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/validate.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/validate.cpp.o
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/validate.cpp.o
 .PHONY : validate.cpp.o
 
 validate.i: validate.cpp.i
@@ -284,8 +284,8 @@ validate.i: validate.cpp.i
 
 # target to preprocess a source file
 validate.cpp.i:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/validate.cpp.i
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/validate.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/validate.cpp.i
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/validate.cpp.i
 .PHONY : validate.cpp.i
 
 validate.s: validate.cpp.s
@@ -293,8 +293,8 @@ validate.s: validate.cpp.s
 
 # target to generate assembly for a file
 validate.cpp.s:
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/validate.cpp.s
-	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/validate.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/validate.cpp.s
+	cd /Users/eovertoo/projects-advanced/computerv1cmake/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/validate.cpp.s
 .PHONY : validate.cpp.s
 
 # Help Target
@@ -309,8 +309,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... computer"
-	@echo "... computer_lib"
+	@echo "... computor"
+	@echo "... computor_lib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

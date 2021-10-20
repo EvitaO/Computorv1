@@ -1,7 +1,7 @@
 #ifndef POLYNOMIAL_HPP
 # define POLYNOMIAL_HPP
 
-#include "header.hpp"
+#include "utils.hpp"
 
 class polynomial{
 	public:
@@ -16,24 +16,24 @@ class polynomial{
 		float 						getC() const;
 		int							getDegree() const;
 		std::vector<float> 			getSolutions() const;
-		std::vector<std::string>	getSolutionsFrac() const;
+		std::vector<std::string>	getSolutionsFractions() const;
 		long double					getDiscriminant() const;
 
-		std::string					getOutput() const;
-		std::string					getOutput2() const;
+		std::string					getOutputDegree01() const;
+		std::string					getOutputDegree2() const;
 
-		std::string					getSteps(int i) const;
-		std::string					getStepsNegative() const;
-		std::string					getStepsD() const;
+		std::string					getStepsSolutions(int i) const;
+		std::string					getStepsNegativeDiscriminant() const;
+		std::string					getStepsDiscriminant() const;
 
-		void						solve();
-		void						solve2();
-		void						solveNegative();
+		void						solvePolynomial();
+		void						solvePolynomialDegree2();
+		void						solveNegativeDiscriminant();
 		
 
 		void						calculateDiscriminant();
 		
-		void						calculateFractions();
+		void						calculateSolutionsFractions();
 		
 
 	private:

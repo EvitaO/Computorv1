@@ -7,7 +7,7 @@ TEST(getDiscriminant, ValidInput){
     try{
         a.setup();
         polynomial aa(a.getFloat(2), a.getFloat(1), a.getFloat(0), a.getDegree());
-        aa.solve();
+        aa.solvePolynomial();
         EXPECT_FLOAT_EQ(aa.getDiscriminant(), 25);
     }
     catch (std::exception & e){
@@ -18,7 +18,7 @@ TEST(getDiscriminant, ValidInput){
     try{
         b.setup();
         polynomial bb(b.getFloat(2), b.getFloat(1), b.getFloat(0), b.getDegree());
-        bb.solve();
+        bb.solvePolynomial();
         EXPECT_FLOAT_EQ(bb.getDiscriminant(), 64957.0/2500.0);
     }
     catch (std::exception & e){
@@ -29,7 +29,7 @@ TEST(getDiscriminant, ValidInput){
     try{
         c.setup();
         polynomial cc(c.getFloat(2), c.getFloat(1), c.getFloat(0), c.getDegree());
-        cc.solve();
+        cc.solvePolynomial();
         EXPECT_FLOAT_EQ(cc.getDiscriminant(), 76451.0/500.0);
     }
     catch (std::exception & e){
@@ -40,7 +40,7 @@ TEST(getDiscriminant, ValidInput){
     try{
         d.setup();
         polynomial dd(d.getFloat(2), d.getFloat(1), d.getFloat(0), d.getDegree());
-        dd.solve();
+        dd.solvePolynomial();
         EXPECT_EQ(dd.getDiscriminant(), 16);
     }
     catch (std::exception & e){

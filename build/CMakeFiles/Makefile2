@@ -135,8 +135,8 @@ lib/googletest/googletest/clean: lib/googletest/googletest/CMakeFiles/gtest.dir/
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/computer_lib.dir/all
-src/all: src/CMakeFiles/computer.dir/all
+src/all: src/CMakeFiles/computor_lib.dir/all
+src/all: src/CMakeFiles/computor.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -144,15 +144,15 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/computer_lib.dir/clean
-src/clean: src/CMakeFiles/computer.dir/clean
+src/clean: src/CMakeFiles/computor_lib.dir/clean
+src/clean: src/CMakeFiles/computor.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all: test/CMakeFiles/computer_test.dir/all
+test/all: test/CMakeFiles/computor_test.dir/all
 .PHONY : test/all
 
 # Recursive "preinstall" directory target.
@@ -160,87 +160,87 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean: test/CMakeFiles/computer_test.dir/clean
+test/clean: test/CMakeFiles/computor_test.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/computer_lib.dir
+# Target rules for target src/CMakeFiles/computor_lib.dir
 
 # All Build rule for target.
-src/CMakeFiles/computer_lib.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target computer_lib"
-.PHONY : src/CMakeFiles/computer_lib.dir/all
+src/CMakeFiles/computor_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target computor_lib"
+.PHONY : src/CMakeFiles/computor_lib.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/computer_lib.dir/rule: cmake_check_build_system
+src/CMakeFiles/computor_lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computer_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computor_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/computer_lib.dir/rule
+.PHONY : src/CMakeFiles/computor_lib.dir/rule
 
 # Convenience name for target.
-computer_lib: src/CMakeFiles/computer_lib.dir/rule
-.PHONY : computer_lib
+computor_lib: src/CMakeFiles/computor_lib.dir/rule
+.PHONY : computor_lib
 
 # clean rule for target.
-src/CMakeFiles/computer_lib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/clean
-.PHONY : src/CMakeFiles/computer_lib.dir/clean
+src/CMakeFiles/computor_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/clean
+.PHONY : src/CMakeFiles/computor_lib.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/computer.dir
+# Target rules for target src/CMakeFiles/computor.dir
 
 # All Build rule for target.
-src/CMakeFiles/computer.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target computer"
-.PHONY : src/CMakeFiles/computer.dir/all
+src/CMakeFiles/computor.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target computor"
+.PHONY : src/CMakeFiles/computor.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/computer.dir/rule: cmake_check_build_system
+src/CMakeFiles/computor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/computor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/computer.dir/rule
+.PHONY : src/CMakeFiles/computor.dir/rule
 
 # Convenience name for target.
-computer: src/CMakeFiles/computer.dir/rule
-.PHONY : computer
+computor: src/CMakeFiles/computor.dir/rule
+.PHONY : computor
 
 # clean rule for target.
-src/CMakeFiles/computer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/clean
-.PHONY : src/CMakeFiles/computer.dir/clean
+src/CMakeFiles/computor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/clean
+.PHONY : src/CMakeFiles/computor.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/computer_test.dir
+# Target rules for target test/CMakeFiles/computor_test.dir
 
 # All Build rule for target.
-test/CMakeFiles/computer_test.dir/all: src/CMakeFiles/computer_lib.dir/all
-test/CMakeFiles/computer_test.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target computer_test"
-.PHONY : test/CMakeFiles/computer_test.dir/all
+test/CMakeFiles/computor_test.dir/all: src/CMakeFiles/computor_lib.dir/all
+test/CMakeFiles/computor_test.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computor_test.dir/build.make test/CMakeFiles/computor_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computor_test.dir/build.make test/CMakeFiles/computor_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target computor_test"
+.PHONY : test/CMakeFiles/computor_test.dir/all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/computer_test.dir/rule: cmake_check_build_system
+test/CMakeFiles/computor_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/computer_test.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/computor_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eovertoo/projects-advanced/computerv1cmake/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/computer_test.dir/rule
+.PHONY : test/CMakeFiles/computor_test.dir/rule
 
 # Convenience name for target.
-computer_test: test/CMakeFiles/computer_test.dir/rule
-.PHONY : computer_test
+computor_test: test/CMakeFiles/computor_test.dir/rule
+.PHONY : computor_test
 
 # clean rule for target.
-test/CMakeFiles/computer_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/clean
-.PHONY : test/CMakeFiles/computer_test.dir/clean
+test/CMakeFiles/computor_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computor_test.dir/build.make test/CMakeFiles/computor_test.dir/clean
+.PHONY : test/CMakeFiles/computor_test.dir/clean
 
 #=============================================================================
 # Target rules for target lib/googletest/googlemock/CMakeFiles/gmock.dir

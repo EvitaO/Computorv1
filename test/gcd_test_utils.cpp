@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "header.hpp"
+#include "utils.hpp"
 
 TEST(gcd, HandlesZeroInput){
     EXPECT_EQ(gcd(0,0), 0);

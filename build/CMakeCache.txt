@@ -194,7 +194,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=computer
+CMAKE_PROJECT_NAME:STATIC=computor
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.11.0
@@ -294,6 +294,15 @@ computer_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 computer_SOURCE_DIR:STATIC=/Users/eovertoo/projects-advanced/computerv1cmake
+
+//Value Computed by CMake
+computor_BINARY_DIR:STATIC=/Users/eovertoo/projects-advanced/computerv1cmake/build
+
+//Value Computed by CMake
+computor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+computor_SOURCE_DIR:STATIC=/Users/eovertoo/projects-advanced/computerv1cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/eovertoo/projects-advanced/computerv1cmake/build/lib/googletest/googlemock

@@ -1,5 +1,5 @@
 #include "polynomial.hpp"
-#include "header.hpp"
+#include "utils.hpp"
 #include "validate.hpp"
 
 void	printhelp(){
@@ -23,7 +23,7 @@ void	validating(std::string a){
 		return;
 	}
 	polynomial poly(x.getFloat(2), x.getFloat(1), x.getFloat(0), x.getDegree());
-	poly.solve();
+	poly.solvePolynomial();
 	std::cout << poly << std::endl;
 }
 

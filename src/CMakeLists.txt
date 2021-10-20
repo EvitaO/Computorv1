@@ -2,7 +2,7 @@
 set(BINARY ${CMAKE_PROJECT_NAME})
 
 set(SOURCES
-    header.hpp
+    utils.hpp
     main.cpp
     polynomial.cpp
     polynomial.hpp

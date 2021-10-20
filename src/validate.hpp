@@ -1,7 +1,7 @@
 #ifndef VALIDATE_HPP
 # define VALIDATE_HPP
 
-#include "header.hpp"
+#include "utils.hpp"
 
 class	validate{
 	public:
@@ -21,8 +21,8 @@ class	validate{
 		int						getDegree() const;
 		void					addpair(float n, int exp);
 
-		void					createReduced();
-		std::string				getReduced() const;
+		void					createReducedForm();
+		std::string				getReducedForm() const;
 
 		int						saveNbr(std::string input, int i, int sign);
 
@@ -35,10 +35,10 @@ class	validate{
 		std::string							_input;
 		std::string							_reducedform;
 		std::vector<std::string>			_chunks;
-		std::vector<std::pair<float, int> >	_order;
+		std::vector<std::pair<float, int> >	_inputOrder;
 		int									_degree;
 		float								_nbr;
-		int									_equal;
+		int									_equalsign;
 };
 
 std::ostream &			operator<<(std::ostream & o, validate const & src);

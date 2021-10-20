@@ -8,7 +8,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         a.setup();
         polynomial aa(a.getFloat(2), a.getFloat(1), a.getFloat(0), a.getDegree());
-        aa.solve();
+        aa.solvePolynomial();
         EXPECT_EQ(aa.getSolutions()[0], 0);
         EXPECT_FLOAT_EQ(aa.getSolutions()[1], -50.0/3.0);
     }
@@ -20,7 +20,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         b.setup();
         polynomial bb(b.getFloat(2), b.getFloat(1), b.getFloat(0), b.getDegree());
-        bb.solve();
+        bb.solvePolynomial();
         EXPECT_FLOAT_EQ(bb.getSolutions()[0], (-5.5 - sqrt(25.9828))/8);
         EXPECT_FLOAT_EQ(bb.getSolutions()[1], (-5.5 + sqrt(25.9828))/8);
     }
@@ -32,7 +32,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         c.setup();
         polynomial cc(c.getFloat(2), c.getFloat(1), c.getFloat(0), c.getDegree());
-        cc.solve();
+        cc.solvePolynomial();
         EXPECT_FLOAT_EQ(cc.getSolutions()[0], (-2.5 - sqrt(152.902))/6.666);
         EXPECT_FLOAT_EQ(cc.getSolutions()[1], (-2.5 + sqrt(152.902))/6.666);
     }
@@ -44,7 +44,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         d.setup();
         polynomial dd(d.getFloat(2), d.getFloat(1), d.getFloat(0), d.getDegree());
-        dd.solve();
+        dd.solvePolynomial();
         EXPECT_EQ(dd.getSolutions()[0], 8);
         EXPECT_EQ(dd.getSolutions()[1], 0);
     }
@@ -56,7 +56,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         e.setup();
         polynomial ee(e.getFloat(2), e.getFloat(1), e.getFloat(0), e.getDegree());
-        ee.solve();
+        ee.solvePolynomial();
         EXPECT_FLOAT_EQ(ee.getSolutions()[0], -(21.666/10));
         EXPECT_EQ(ee.getSolutions()[1], 0);
     }
@@ -68,7 +68,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         f.setup();
         polynomial ff(f.getFloat(2), f.getFloat(1), f.getFloat(0), f.getDegree());
-        ff.solve();
+        ff.solvePolynomial();
         EXPECT_EQ(ff.getSolutions()[0], 0);
     }
     catch (std::exception & e){
@@ -79,7 +79,7 @@ TEST(getSolutions, ValidInputDegree2){
     try{
         g.setup();
         polynomial gg(g.getFloat(2), g.getFloat(1), g.getFloat(0), g.getDegree());
-        gg.solve();
+        gg.solvePolynomial();
         EXPECT_FLOAT_EQ(gg.getSolutions()[0], 97.0/20.0);
         EXPECT_FLOAT_EQ(gg.getSolutions()[1], 0.0);
     }
@@ -93,7 +93,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         a.setup();
         polynomial aa(a.getFloat(2), a.getFloat(1), a.getFloat(0), a.getDegree());
-        aa.solve();
+        aa.solvePolynomial();
         EXPECT_FLOAT_EQ(aa.getSolutions()[0], -1.65);
     }
     catch (std::exception & e){
@@ -104,7 +104,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         b.setup();
         polynomial bb(b.getFloat(2), b.getFloat(1), b.getFloat(0), b.getDegree());
-        bb.solve();
+        bb.solvePolynomial();
         EXPECT_FLOAT_EQ(bb.getSolutions()[0], (-4.2667/5.5));
     }
     catch (std::exception & e){
@@ -115,7 +115,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         c.setup();
         polynomial cc(c.getFloat(2), c.getFloat(1), c.getFloat(0), c.getDegree());
-        cc.solve();
+        cc.solvePolynomial();
         EXPECT_FLOAT_EQ(cc.getSolutions()[0], (11000/5833.0));
     }
     catch (std::exception & e){
@@ -126,7 +126,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         d.setup();
         polynomial dd(d.getFloat(2), d.getFloat(1), d.getFloat(0), d.getDegree());
-        dd.solve();
+        dd.solvePolynomial();
         EXPECT_EQ(dd.getSolutions()[0], 0.125);
     }
     catch (std::exception & e){
@@ -137,7 +137,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         e.setup();
         polynomial ee(e.getFloat(2), e.getFloat(1), e.getFloat(0), e.getDegree());
-        ee.solve();
+        ee.solvePolynomial();
         EXPECT_FLOAT_EQ(ee.getSolutions()[0], -(5/10.833));
     }
     catch (std::exception & e){
@@ -148,7 +148,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         f.setup();
         polynomial ff(f.getFloat(2), f.getFloat(1), f.getFloat(0), f.getDegree());
-        ff.solve();
+        ff.solvePolynomial();
         EXPECT_FLOAT_EQ(ff.getSolutions()[0], 500.0/10971);
     }
     catch (std::exception & e){
@@ -159,7 +159,7 @@ TEST(getSolutions, ValidInputDegree1){
     try{
         g.setup();
         polynomial gg(g.getFloat(2), g.getFloat(1), g.getFloat(0), g.getDegree());
-        gg.solve();
+        gg.solvePolynomial();
         EXPECT_EQ(gg.getSolutions()[0], 0);
     }
     catch (std::exception & e){
@@ -172,8 +172,8 @@ TEST(getSolutions, ValidInputDegree0){
     try{
         a.setup();
         polynomial aa(a.getFloat(2), a.getFloat(1), a.getFloat(0), a.getDegree());
-        aa.solve();
-        EXPECT_EQ(aa.getOutput(), "No solution possible");
+        aa.solvePolynomial();
+        EXPECT_EQ(aa.getOutputDegree01(), "No solution possible");
     }
     catch (std::exception & e){
         EXPECT_TRUE(false);
@@ -183,8 +183,8 @@ TEST(getSolutions, ValidInputDegree0){
     try{
         b.setup();
         polynomial bb(b.getFloat(2), b.getFloat(1), b.getFloat(0), b.getDegree());
-        bb.solve();
-        EXPECT_EQ(bb.getOutput(), "Every real number is a solutions");
+        bb.solvePolynomial();
+        EXPECT_EQ(bb.getOutputDegree01(), "Every real number is a solutions");
     }
     catch (std::exception & e){
         EXPECT_TRUE(false);

@@ -162,43 +162,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named computer_lib
+# Target rules for targets named computor_lib
 
 # Build rule for target.
-computer_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_lib
-.PHONY : computer_lib
+computor_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computor_lib
+.PHONY : computor_lib
 
 # fast build rule for target.
-computer_lib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer_lib.dir/build.make src/CMakeFiles/computer_lib.dir/build
-.PHONY : computer_lib/fast
+computor_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor_lib.dir/build.make src/CMakeFiles/computor_lib.dir/build
+.PHONY : computor_lib/fast
 
 #=============================================================================
-# Target rules for targets named computer
+# Target rules for targets named computor
 
 # Build rule for target.
-computer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer
-.PHONY : computer
+computor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computor
+.PHONY : computor
 
 # fast build rule for target.
-computer/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computer.dir/build.make src/CMakeFiles/computer.dir/build
-.PHONY : computer/fast
+computor/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/computor.dir/build.make src/CMakeFiles/computor.dir/build
+.PHONY : computor/fast
 
 #=============================================================================
-# Target rules for targets named computer_test
+# Target rules for targets named computor_test
 
 # Build rule for target.
-computer_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer_test
-.PHONY : computer_test
+computor_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computor_test
+.PHONY : computor_test
 
 # fast build rule for target.
-computer_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computer_test.dir/build.make test/CMakeFiles/computer_test.dir/build
-.PHONY : computer_test/fast
+computor_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/computor_test.dir/build.make test/CMakeFiles/computor_test.dir/build
+.PHONY : computor_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -264,9 +264,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... computer"
-	@echo "... computer_lib"
-	@echo "... computer_test"
+	@echo "... computor"
+	@echo "... computor_lib"
+	@echo "... computor_test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
