@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libcomputor_lib.a CMakeFiles/computor_lib.dir/main.cpp.o CMakeFiles/computor_lib.dir/polynomial.cpp.o CMakeFiles/computor_lib.dir/utils.cpp.o CMakeFiles/computor_lib.dir/validate.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libcomputor_lib.a
